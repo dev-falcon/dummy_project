@@ -1,33 +1,45 @@
 <template>
- 
 
- <SalesPortalLogin  />
+  <v-app >
+
+    <router-view>
+
+    </router-view>
+
+    <!-- <SalesPortalLogin /> -->
+
+    <!-- <Leads  /> -->
 
 
+
+  </v-app>
 </template>
 
 <script>
-import SalesPortalLogin from './views/SalesPortalLogin.vue'
+import Leads from './views/Leads.vue';
+import SalesPortalLogin from "./views/SalesPortalLogin.vue";
 
 
 
-export default{
+export default {
+  name: "App",
 
-  name:'App',
-
-  components:{
+  components: {
     SalesPortalLogin,
-  }
-
-
-
-}
-
-
+    Leads,
+  },
+};
 </script>
 
-<style>
 
+
+<style scoped>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 </style>
